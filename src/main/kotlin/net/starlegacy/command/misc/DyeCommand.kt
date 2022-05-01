@@ -37,7 +37,7 @@ object DyeCommand : SLCommand() {
 	}
 
 	private fun dyeItem(item: ItemStack, newDyeColor: DyeColor): DyeColor? {
-		if (!(item.type.isConcrete || item.type.isConcretePowder || item.type.isWool || item.type.Glass || item.type.GlassPane || item.type.StainedTerracotta || item.type.GlazedTerracotta || item.type.Carpet || item.type.Bed)) {
+		if (!(item.type.isConcrete || item.type.isConcretePowder || item.type.isWool || item.type.isGlass || item.type.isGlassPane || item.type.isStainedTerracotta || item.type.isGlazedTerracotta || item.type.isCarpet || item.type.isBed)) {
 			fail { "This item can not be dyed." }
 		}
 
