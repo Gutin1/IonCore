@@ -28,6 +28,19 @@ import org.bukkit.potion.PotionEffectType
 
 object BlasterListener : SLEventListener() {
 	@EventHandler
+	fun onHoldBlaster(event: PlayerItemHeldEvent) {
+		val newSlot = event.newSlot
+		val heldItem = event.player.inventory.getItem(newSlot)
+		val blaster = Blasters.getBlaster(heldItem!!)
+		val player = event.player
+
+		while (blaster != null) {
+			player.addPotionEffect(
+				PotionEffect(PotionEffectType.FAST_DIGGING, 20, 5)
+			)
+		}
+	}
+	@EventHandler
 	fun onClick(event: PlayerInteractEvent) {
 		if (event.action != LEFT_CLICK_AIR && event.action != LEFT_CLICK_BLOCK) {
 			return
