@@ -41,7 +41,7 @@ object BlasterListener : SLEventListener() {
 		Blasters.fireBlaster(player, item, Blasters.getBlasterType(blaster))
 
 		player.addPotionEffect(
-			PotionEffect(PotionEffectType.FAST_DIGGING, 20, 5)
+			PotionEffect(PotionEffectType.FAST_DIGGING, 10, 5)
 		)
 	}
 
