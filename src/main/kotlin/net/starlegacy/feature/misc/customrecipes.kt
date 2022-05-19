@@ -27,6 +27,7 @@ object CustomRecipes : SLComponent() {
 			registerWireRecipe()
 			registerSeaLanternRecipe()
 			registerEndPortalFrameRecipe()
+			registerBellRecipe()
 		}
 	}
 
@@ -299,6 +300,19 @@ object CustomRecipes : SLComponent() {
 				'w' to materialChoice(Material.WARPED_PLANKS),
 				'o' to materialChoice(Material.ENDER_PEARL),
 				's' to materialChoice(Material.END_STONE)
+			)
+		)
+	}
+	private fun registerBellRecipe() {
+		registerShapedRecipe(
+			"bell",
+			ItemStack(Material.BELL, 1),
+			"wow", "szs",
+			ingredients = mapOf(
+				'w' to materialChoice(Material.STICK),
+				'o' to materialChoice(Material.OAK_PLANKS),
+				's' to materialChoice(Material.STONE),
+				'z' to materialChoice(Material.GOLD_BLOCK)
 			)
 		)
 	}
