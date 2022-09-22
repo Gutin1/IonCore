@@ -33,6 +33,7 @@ import org.bukkit.Material.LEATHER_LEGGINGS
 import org.bukkit.Material.SHEARS
 import org.bukkit.Material.SHIELD
 import org.bukkit.Material.SNOWBALL
+import org.bukkit.Material.WARPED_FUNGUS_ON_A_STICK
 import org.bukkit.inventory.ItemStack
 
 open class CustomItem(
@@ -304,7 +305,7 @@ object CustomItems {
 	private fun registerPlanetIcon(name: String, model: Int): CustomItem = makeItem(
 		id = "planet_icon_${name.lowercase(Locale.getDefault()).replace(" ", "")}",
 		name = name,
-		mat = APPLE,
+		mat = WARPED_FUNGUS_ON_A_STICK,
 		model = model
 	)
 
