@@ -68,7 +68,9 @@ import org.bukkit.Material.MOVING_PISTON
 import org.bukkit.Material.NETHER_PORTAL
 import org.bukkit.Material.NOTE_BLOCK
 import org.bukkit.Material.OBSERVER
+import org.bukkit.Material.OCHRE_FROGLIGHT
 import org.bukkit.Material.OXIDIZED_COPPER
+import org.bukkit.Material.PEARLESCENT_FROGLIGHT
 import org.bukkit.Material.PISTON
 import org.bukkit.Material.PISTON_HEAD
 import org.bukkit.Material.POTTED_AZURE_BLUET
@@ -106,12 +108,14 @@ import org.bukkit.Material.REDSTONE_WALL_TORCH
 import org.bukkit.Material.REDSTONE_WIRE
 import org.bukkit.Material.REPEATER
 import org.bukkit.Material.SCAFFOLDING
+import org.bukkit.Material.SCULK
 import org.bukkit.Material.SEA_LANTERN
 import org.bukkit.Material.SHROOMLIGHT
 import org.bukkit.Material.SPONGE
 import org.bukkit.Material.STICKY_PISTON
 import org.bukkit.Material.TORCH
 import org.bukkit.Material.TRAPPED_CHEST
+import org.bukkit.Material.VERDANT_FROGLIGHT
 import org.bukkit.Material.WALL_TORCH
 import org.bukkit.Material.WAXED_COPPER_BLOCK
 import org.bukkit.Material.WAXED_EXPOSED_COPPER
@@ -134,6 +138,9 @@ val FLYABLE_BLOCKS: EnumSet<Material> = mutableSetOf(
 	GLOWSTONE,
 	REDSTONE_LAMP,
 	MAGMA_BLOCK,
+	OCHRE_FROGLIGHT,
+	PEARLESCENT_FROGLIGHT,
+	VERDANT_FROGLIGHT,
 
 	DIAMOND_BLOCK,
 	REDSTONE_BLOCK,
@@ -170,6 +177,7 @@ val FLYABLE_BLOCKS: EnumSet<Material> = mutableSetOf(
 	LADDER,
 	DAYLIGHT_DETECTOR,
 	NETHER_PORTAL,
+	SCULK,
 
 	OBSERVER,
 	REPEATER,
